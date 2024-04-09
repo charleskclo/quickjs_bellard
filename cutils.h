@@ -46,11 +46,11 @@
   #define __attribute(x)
   typedef intptr_t ssize_t;
 #else
-#define likely(x)       __builtin_expect(!!(x), 1)
-#define unlikely(x)     __builtin_expect(!!(x), 0)
-#define force_inline inline __attribute__((always_inline))
-#define no_inline __attribute__((noinline))
-#define __maybe_unused __attribute__((unused))
+  #define likely(x)       __builtin_expect(!!(x), 1)
+  #define unlikely(x)     __builtin_expect(!!(x), 0)
+  #define force_inline inline __attribute__((always_inline))
+  #define no_inline __attribute__((noinline))
+  #define __maybe_unused __attribute__((unused))
 #endif
 
 #define xglue(x, y) x ## y
