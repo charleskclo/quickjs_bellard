@@ -35,9 +35,6 @@
   #include <sys/time.h>
 #endif
 
-/* set if CPU is big endian */
-#undef WORDS_BIGENDIAN
-
 #ifndef __has_attribute
   #define likely(x)    (x)
   #define unlikely(x)  (x)
